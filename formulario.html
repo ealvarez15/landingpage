@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Si te interesa mi perfil y deseas contactarme, por favor rellena los datos solicitados a continuación.
+                En el campo de mensaje, indica una breve descripcion de la oferta de empleo.</h1>
+        </div>
+    </header>
+
+    <form id="formulario" action="submit_form.php" method="POST">
+        <div class="form-group">
+            <label for="nombre"><h3>Nombre de la Empresa:</h3></label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email"><h3>Tipo de contrato:</h3></label>
+            <input type="Radio" name="FP" id="" value="Parcial" />Parcial. <br /><input type="Radio" name="FP" id=""
+            value="Indefinido" />Indefinido. <br><input type="Radio" name="FP" id=""
+            value="Sustitucion por vacaciones" />Sustitucion por vacaciones.
+        </div>
+        <div class="form-group">
+            <label for="asunto"><h3>Salario anual:</h3></label>
+            <select name="volumen-estimado" id="">
+                <option value="1">18000€ - 23000€</option>
+                <option value="2">23000€ - 30000€</option>
+                <option value="3">30000€ - 40000€</option>
+                <option value="3">+40000€</option>
+            </select>
+
+        </div>
+        <div class="form-group">
+            <label for="mensaje"><h3>Mensaje:</h3></label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+
+</html>

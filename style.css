@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:"Lora", serif;
+}
+/*Pequeños reseteos*/
+h2,p,a{
+    margin: 0px;
+    padding:10px ;
+}
+
+body{
+    background-color:#E6BEC6;
+}
+
+section{
+    position: relative;
+    width: 100% ;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background:#C66EDE ;
+    border-radius: 5px; 
+    padding: 0 10px ;
+    font-family: 'lora', serif;
+    font-weight: 600;
+}
+header .logo:hover{
+    color: rgb(210, 175, 241);
+    background: #F5AE42 ;
+    transition: 1s ;
+}
+
+header .navbar{
+    position: relative;
+    display: flex; 
+}
+header .navbar li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navbar li a{
+  text-decoration: none;
+   color: #C66EDE;
+   background: #F5AE42;
+   border-radius: 20px;
+   font-weight: 600;
+   padding: 10px;
+   transition: 0.3s;
+   font-size: 0.9em;
+   text-transform: uppercase;
+   display:inline-block;
+}
+header .navbar li a:hover{
+    border-bottom: 3px solid #C66EDE;
+    padding: 2px;
+}
+/*Contenido de la web*/
+.contenido{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.contenido .tituloBox {
+   position: relative; 
+   max-width: 600px;
+   text-align: center;
+}
+
+.contenido .tituloBox h2{
+    font-size: 3.5em;
+    text-transform: uppercase;
+    color: white;
+    font-family:"Lora", serif;
+}
+.contenido .tituloBox h2 samp{
+    background: #C66EDE;
+    color: white;
+    padding: 0 10px;
+    font-family:"Lora", serif;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.contenido .tituloBox p{
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: white;
+    font-family:"Lora", serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.contenido .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#C66EDE; 
+    background: #F5AE42;
+    padding: 10px 20px;
+    margin: left 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.contenido .tituloBox a:hover{
+    color: #F5AE42;
+    background: #C66EDE;
+    transition: 0.5s;
+}
+.contenido .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content:flex-end ;
+    padding-right: 50px;
+    margin-top: -50px;
+    z-index: -5;
+    flex-wrap: wrap;
+}
+.contenido .imgBox img{
+    height:80vh ;
+    width:100%;
+}
+.contenido .imgBox img:hover{
+    height:80vh ;
+}
+/*Copyrigth*/
+.copyrigth{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 100px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.copyrigth p{
+    color: #C66EDE;
+    background: #F5AE42;
+    border-radius:5px;
+    text-align: center;
+    margin-left: 100px;
+    padding: 5px;
+}
+/*Rede sociales*/
+.redesSociales{
+    position: absolute;
+    right: 0px;
+    bottom:0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+}
+.redesSociales li{
+   padding: 10px; 
+}
+.redesSociales li a{
+    color: #C66EDE;
+    background: #F5AE42;
+    border-radius: 20px;
+    font-size: 2.5em;
+    transition: 0.3s;
+ }
+ .redesSociales li a:hover{
+    color: #F5AE42;
+    background: #C66EDE;
+    transition: 0.5s;
+}
+/*Ajustes para hacer que la web sea responsieve
+@media screen and (min-width:576px) {
+ nav{
+    display: flex;
+ }
+ .navbar{
+    display: inline-block;
+ }
+ .logo{
+    display: flex;
+ }
+ .contenido{
+    display: flex;
+ }
+
+    
+}
+@media screen and (min-width:992px) {
+    
+}

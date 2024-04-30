@@ -1,0 +1,80 @@
+body {
+    font-family:"Lora", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:#E6BEC6;
+}
+
+header {
+    background-color:  #C66EDE;
+    color: #f3f0ec;
+    padding: 0px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 10px;
+}
+.foto-perfil {
+    position: relative;
+    top: 10px; /* Ajusta esto según tu preferencia */
+    right: 200px;
+    width: 150px; /* Ajusta el tamaño como prefieras */
+   height: 150px; /* Esto mantendrá la proporción de la imagen */
+   border-radius: 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 0 15%;
+
+}
+
+h2 {
+    background-color: #C66EDE;
+    color: #f3f0ec;
+    padding: 5px;
+    border-radius: 5px;
+}
+.informacion-personal{
+   color: #121213;
+   padding: 20px;
+   margin: 0 15%;
+
+}
+ul {
+    list-style-type: disc; /* Esto es el estilo por defecto para listas no ordenadas */
+    padding-left: 20px; /* Esto añade espacio a la izquierda de los ítems de la lista */
+}
+
+/* Estilos para cada ítem de la lista */
+li {
+    margin-bottom: 10px; /* Esto añade un poco de espacio entre cada ítem */
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    padding: 10px 0; /* Ajusta esto a tus necesidades */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.pie-pagina{
+    color: #C66EDE;
+    background: #F5AE42;
+    text-align: center;
+    margin:0;
+    padding:0;
+
+}
+.prueba{
+    display: flex;
+    justify-content: center;
+}
